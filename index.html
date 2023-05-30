@@ -7,6 +7,8 @@
     <script src="https://kit.fontawesome.com/5d6a6a6511.js" crossorigin="anonymous"></script>
     <title>Barber Shop- WebX IT LAB</title>
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
 <body>
     <section id="banner"> 
@@ -24,11 +26,11 @@
     <div id="sideNav">
         <nav>
             <ul>
-                <li><a href=#">HOME</a></li>
-                <li><a href=#">FEATURES</a></li>
-                <li><a href=#">SERVICES</a></li>
-                <li><a href=#">TESTIMONIALS</a></li>
-                <li><a href=#">MEET US</a></li>
+                <li><a href="#banner">HOME</a></li>
+                <li><a href="#feature">FEATURES</a></li>
+                <li><a href="#service">SERVICES</a></li>
+                <li><a href="#testimonial">TESTIMONIALS</a></li>
+                <li><a href="#footer">MEET US</a></li>
             </ul>
         </nav>
     </div>
@@ -226,6 +228,7 @@
 
 
 <section id="footer">
+    <img src="img/footer-img.png" class="footer-img">
     <div class="title-text">
         <p>CONTACT</p>
         <h1>Visit Shop Today</h1>
@@ -233,11 +236,24 @@
 <div class="footer-row">
 <div class="footer-left">
     <h1>Opening Hours</h1>
+    <p><i class="fa fa-clock-o"></i>Monday to Friday - 9am to 9pm</p>
+    <p><i class="fa fa-clock-o"></i>Saturday and Sunday - 8am to 11pm</p>
 </div>
 <div class="footer-right">
     <h1>Get In Touch</h1>
+    <p>#30 abx Colony, XYZ City USA<i class="fa fa-map-marker"></i></p>
+    <p>example@website.com<i class="fa fa-paper-plane"></i></p>
+    <p>+01 123456789<i class="fa fa-phone"></i></p>
 </div>    
 </div>
+
+<diV class="social-links">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-youtube-play"></i>
+    <p>Copyright WebX IT Lab@2023</p>
+</diV>
 
 
 </section>
@@ -262,6 +278,11 @@
             menu.src = "img/menu.png";
         }
     }
+
+    var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 1000,
+        speedAsDuration: true
+    });
 </script>
 
 </body>

@@ -5,11 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "chrome",
+            "name": "Launch Chrome",
             "request": "launch",
-            "name": "Launch Chrome against localhost",
-            "url": "http://localhost:8080",
+            "type": "chrome",
+            "url": "file:///C:/Users/ronyv/Documents/all_work/responsive_barber_shop_website/index.html",
             "webRoot": "${workspaceFolder}"
-        }
-    ]
+        },
 }
